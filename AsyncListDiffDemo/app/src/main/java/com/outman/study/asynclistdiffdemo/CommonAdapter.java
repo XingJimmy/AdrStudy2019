@@ -28,4 +28,8 @@ public abstract class CommonAdapter extends RecyclerView.Adapter<DemoViewHolder>
     protected abstract DemoData getItem(int pos);
 
     public abstract void updateData(List<DemoData> datas);
+
+    public abstract void setData(List<DemoData> datas);
+
+    public abstract List<DemoData> getData();
 }

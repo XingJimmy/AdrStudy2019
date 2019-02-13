@@ -25,6 +25,16 @@ public class AsyncListDiffAdapter extends CommonAdapter {
     }
 
     @Override
+    public void setData(List<DemoData> datas) {
+        updateData(datas);
+    }
+
+    @Override
+    public List<DemoData> getData() {
+        return mListDiffer.getCurrentList();
+    }
+
+    @Override
     protected DemoData getItem(int pos) {
         return mListDiffer.getCurrentList().get(pos);
     }

@@ -21,4 +21,14 @@ public class NormalAdapter extends CommonAdapter {
         this.mDatas = datas;
         notifyDataSetChanged();
     }
+
+    @Override
+    public void setData(List<DemoData> datas) {
+        this.mDatas = datas;
+    }
+
+    @Override
+    public List<DemoData> getData() {
+        return mDatas;
+    }
 }
